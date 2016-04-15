@@ -1,0 +1,5 @@
+﻿Groups/Roles: 
+<select ng-model="$ctrl.location" ng-change="$ctrl.onLocationChange()">
+	<option ng-repeat="group in $ctrl.groups" value="{{group}}">{{group}}</option>
+</select>
+<ng-view></ng-view>

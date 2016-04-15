@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51948C23-760D-4853-A12A-DA9131967FB4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FusePOC</RootNamespace>
+    <AssemblyName>FusePOC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\generic\generic.component.js" />
+    <Content Include="packages.config" />
+    <Content Include="assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="assets\fonts\MaterialIcons-Regular.ijmap" />
+    <Content Include="assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="assets\fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="assets\fonts\ui-grid.eot" />
+    <Content Include="assets\fonts\ui-grid.ttf" />
+    <Content Include="assets\fonts\ui-grid.woff" />
+    <Content Include="app\typings.json" />
+    <Content Include="app\tsconfig.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\auto\auto.component.js" />
+    <Content Include="app\auto\auto.model.js" />
+    <Content Include="app\auto\auto.module.js" />
+    <Content Include="app\auto\auto.service.js" />
+    <Content Include="app\auto\auto.template.html" />
+    <Content Include="app\auto\segmentation\auto.segmentation.component.js" />
+    <Content Include="app\auto\segmentation\auto.segmentation.template.html" />
+    <Content Include="app\poc\poc.component.js" />
+    <Content Include="app\poc\poc.config.js" />
+    <Content Include="app\poc\poc.controller.js" />
+    <Content Include="app\poc\poc.module.js" />
+    <Content Include="app\poc\poc.template.html" />
+    <Content Include="app\shared\shared.component.js" />
+    <Content Include="app\shared\shared.model.js" />
+    <Content Include="app\shared\shared.service.js" />
+    <Content Include="app\shared\shared.template.html" />
+    <Content Include="app\spul\segmentation\spul.segmentation.component.js" />
+    <Content Include="app\spul\segmentation\spul.segmentation.template.html" />
+    <Content Include="app\spul\spul.component.js" />
+    <Content Include="app\spul\spul.model.js" />
+    <Content Include="app\spul\spul.module.js" />
+    <Content Include="app\spul\spul.service.js" />
+    <Content Include="app\spul\spul.template.html" />
+    <Content Include="assets\css\angular-material.css" />
+    <Content Include="assets\css\angular-material.layouts.min.css" />
+    <Content Include="assets\css\angular-material.min.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\material-icons.css" />
+    <Content Include="assets\css\ui-grid.css" />
+    <Content Include="assets\fonts\ui-grid.svg" />
+    <Content Include="assets\img\dre_logo.png" />
+    <Content Include="assets\img\scusa_l.png" />
+    <Content Include="index.html" />
+    <Content Include="lib\angular-animate.js" />
+    <Content Include="lib\angular-aria.js" />
+    <Content Include="lib\angular-material.js" />
+    <Content Include="lib\angular-messages.js" />
+    <Content Include="lib\angular-resource.js" />
+    <Content Include="lib\angular-route.js" />
+    <Content Include="lib\angular.js" />
+    <Content Include="lib\boot.js" />
+    <Content Include="lib\jasmine-html.js" />
+    <Content Include="lib\jasmine.js" />
+    <Content Include="lib\system-polyfills.js" />
+    <Content Include="lib\system.js" />
+    <Content Include="lib\ui-grid-csv.js" />
+    <Content Include="lib\ui-grid-pdf.js" />
+    <Content Include="lib\ui-grid-vfs-fonts.js" />
+    <Content Include="lib\ui-grid.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include="app\auto\auto.component.ts" />
+    <TypeScriptCompile Include="app\auto\auto.model.ts" />
+    <TypeScriptCompile Include="app\auto\auto.module.ts" />
+    <TypeScriptCompile Include="app\auto\auto.service.ts" />
+    <TypeScriptCompile Include="app\auto\segmentation\auto.segmentation.component.ts" />
+    <TypeScriptCompile Include="app\generic\generic.component.ts" />
+    <TypeScriptCompile Include="app\poc\poc.component.ts" />
+    <TypeScriptCompile Include="app\poc\poc.config.ts" />
+    <TypeScriptCompile Include="app\poc\poc.controller.ts" />
+    <TypeScriptCompile Include="app\poc\poc.module.ts" />
+    <TypeScriptCompile Include="app\shared\shared.component.ts" />
+    <TypeScriptCompile Include="app\shared\shared.model.ts" />
+    <TypeScriptCompile Include="app\shared\shared.service.ts" />
+    <TypeScriptCompile Include="app\spul\segmentation\spul.segmentation.component.ts" />
+    <TypeScriptCompile Include="app\spul\spul.component.ts" />
+    <TypeScriptCompile Include="app\spul\spul.model.ts" />
+    <TypeScriptCompile Include="app\spul\spul.module.ts" />
+    <TypeScriptCompile Include="app\spul\spul.service.ts" />
+    <TypeScriptCompile Include="app\typings\browser.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\angular-material\angular-material.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\angular-resource\index.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\angular-route\angular-route.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\angular\angular.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="app\typings\browser\ambient\ng-grid\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37831</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38169/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

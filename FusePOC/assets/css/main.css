@@ -1,0 +1,516 @@
+﻿body {
+  overflow: hidden !important;
+}
+
+.main-header {
+  background: #374148 !important;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.md-sidenav-left {
+  height: 955px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.container {
+  background-color: #fafafa;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow-y: hidden;
+}
+
+md-badge {
+  margin: 0 0 0 -14px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+
+.notifications-close {
+  position: relative;
+  top: 7px;
+  padding-right: 15px;
+}
+
+card-policy {
+  position: relative;
+}
+
+md-tabs-canvas {
+  box-shadow: 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+md-tab-content > div {
+  height: 100%;
+}
+
+md-tabs.md-accent > md-tabs-wrapper {
+  background-color: #2980b9;
+}
+
+  md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]) {
+    color: #fff;
+  }
+
+  md-tabs.md-accent > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-ink-bar {
+    color: rgb(255,255,255) !important;
+    background: rgb(193, 93, 93) !important;
+    height: 4px;
+  }
+
+.details-bottom-sheet-button {
+  position: fixed;
+  bottom: -14px;
+  right: 65px;
+}
+
+  .details-bottom-sheet-button button {
+    width: 200px;
+    background: rgb(193, 93, 93) !important;
+    color: #fff !important;
+    height: 20px !important;
+    min-height: 20px;
+    font-size: 10px;
+    line-height: 22px !important;
+    border-radius: 3px 3px 0px 0px !important;
+  }
+
+    .details-bottom-sheet-button button span {
+      color: #fff;
+    }
+
+
+.main-toolbar {
+  background: #3498db !important;
+}
+
+  .main-toolbar div h2 span {
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+search-policy {
+  position: relative;
+  left: 15%;
+  top: 40%;
+}
+
+  search-policy md-input-container label:not(.md-no-float):not(.md-container-ignore), md-input-container .md-placeholder {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+
+  search-policy md-input-container .md-input {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+.policy-card-quick-info {
+  height: 50px;
+  padding: 0 50px;
+}
+
+.search-fab {
+  float: right;
+  position: absolute;
+  top: 4%;
+  right: -1%;
+  background: #fff;
+}
+
+md-tab-item span {
+  color: #fff;
+}
+
+.md-subheader {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .010em;
+  line-height: 1.2em;
+  padding: 15px;
+}
+
+.md-subheader {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+  position: relative;
+}
+
+policy-result-list {
+  background: #fff;
+}
+
+.actions-policy-container {
+    height: 25px;
+    margin-left: 15%;
+}
+
+.actions-policy-container span {
+    border-radius: 4px;
+    padding: 0px 3px 0px 2px;
+    font-weight: bold;
+}
+
+.actions-policy-container span:hover {
+    background-color: #3498db;
+}
+
+.actions-policy-container.open {
+    margin-left: 80%;
+}
+
+.ui-grid-header-cell {
+  border-right: none;
+  background-color: #fff;
+}
+
+.ui-grid {
+  height: 100% !important;
+  border: none !important;
+  flex: 1 !important;
+  overflow: hidden;
+}
+
+.ui-grid-viewport {
+  height: 100% !important;
+  flex: 1 !important;
+  max-height: 625px;
+  background: #fff;
+}
+
+.ui-grid-top-panel {
+  background-color: #fff !important;
+  background: #fff !important;
+}
+
+.policyview-toolbar {
+  background: #3498db !important;
+  color: #fff !important;
+  height: 100px !important;
+  min-height: 100px !important;
+  box-shadow: 0 5px 5px -5px #333;
+}
+
+  .policyview-toolbar h2 {
+    font-size: 2em;
+    font-weight: 100;
+    padding: 0 50px;
+  }
+
+.policyview-tabs {
+  z-index: 10;
+}
+
+  .policyview-tabs md-tabs-content-wrapper #tab-content-0 {
+    overflow: auto;
+    height: 750px;
+  }
+
+  .policyview-tabs md-tabs-content-wrapper #tab-content-1 {
+    overflow: auto;
+  }
+
+  .policyview-tabs md-tabs-wrapper {
+    background: #3498db !important;
+  }
+
+  .policyview-tabs md-tabs-content-wrapper {
+    display: block;
+    position: relative;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 740px !important;
+  }
+
+  .policyview-tabs md-tabs-wrapper md-tabs-canvas {
+    left: 15%;
+  }
+
+.policyview-cardpolicy-container {
+  top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+  left: -10%;
+}
+
+.policyview-descnotes-container {
+  position: fixed;
+  width: 500px;
+  height: 600px;
+  margin: 1.5% -5% auto;
+  overflow: hidden;
+}
+
+.policyview-descnotes-container-grid {
+  position: fixed;
+  width: 500px;
+  height: 600px;
+  margin: 1.5% 0% auto;
+  overflow: hidden;
+}
+
+  .policyview-descnotes-container md-tabs, .policyview-descnotes-container-grid md-tabs {
+    left: 25px;
+    background: #fff !important;
+  }
+
+    .policyview-descnotes-container md-tabs md-tabs-wrapper, .policyview-descnotes-container-grid md-tabs md-tabs-wrapper {
+      background: transparent !important;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+
+      .policyview-descnotes-container md-tabs md-tabs-wrapper md-tabs-canvas md-tab-item span, .policyview-descnotes-container-grid md-tabs md-tabs-wrapper md-tabs-canvas md-tab-item span {
+        color: #000;
+      }
+
+.ui-grid-cell {
+  height: 50px !important;
+  padding-left: 15px !important;
+  border: none;
+  padding-top: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.ui-grid-row {
+  background-color: #fff !important;
+}
+
+  .ui-grid-row .ui-grid-cell {
+    background-color: #fff !important;
+  }
+
+  .ui-grid-row.ui-grid-row-selected > [ui-grid-row] > .ui-grid-cell {
+    background-color: #c9dde1 !important;
+  }
+
+.ui-grid-cell md-datepicker {
+  margin-left: -15px !important;
+  background: transparent;
+}
+
+.ui-grid-cell md-input-container md-select {
+  margin-top: 12px;
+  margin-left: -4px;
+}
+
+.loadmore-lng-btn {
+  margin: 0 auto;
+  width: 100%;
+}
+
+utils-group-view div md-card {
+  /*margin: 15px auto;
+    height: 850px;*/
+}
+
+  utils-group-view div md-card md-toolbar {
+    z-index: 999;
+  }
+
+.utilgroups-container md-content, .utilchoices-container md-content {
+  height: 710px;
+}
+
+.ui-grid-canvas {
+  height: 700px !important;
+  padding-top: 1px;
+}
+
+.md-subhead {
+  color: rgba(0,0,0,0.54);
+}
+
+#details-list md-list-item.md-3-line {
+  min-height: 0;
+}
+
+
+@media (max-width: 1919px) and (min-width: 1280px) {
+  body, md-list-item.md-2-line .md-list-item-text p, md-list-item.md-2-line > .md-no-style .md-list-item-text p, md-list-item.md-3-line .md-list-item-text p, md-list-item.md-3-line > .md-no-style .md-list-item-text p,
+  md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line > .md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line > .md-no-style .md-list-item-text h3,
+  .md-subheader {
+    font-size: 12px;
+  }
+
+
+  .ui-grid-viewport {
+    height: 310px !important;
+    max-height: 1280px;
+  }
+
+  .utilgroups-container md-content, .utilchoices-container md-content {
+    height: 408px;
+  }
+
+  .policyview-tabs md-tabs-content-wrapper #tab-content-0 {
+    overflow: auto;
+    height: 440px;
+  }
+
+  .policyview-cardpolicy-container {
+    top: 5px;
+  }
+
+  .policyview-descnotes-container {
+    width: 385px;
+    height: 420px;
+    margin: 1.5% -5% 1.5% -7%;
+  }
+
+  .policyview-descnotes-container-grid {
+    width: 385px;
+    height: 420px;
+    margin: 1.5% -5% 1.5% -2%;
+  }
+
+  .policyview-tabs md-tabs-content-wrapper {
+    height: 440px !important;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 960px) {
+  .layout-column > .flex, .layout-md-column > .flex {
+    font-size: 13px;
+  }
+
+  utils-group-view div md-card {
+    height: 1500px !important;
+  }
+
+  .policyview-descnotes-container {
+    width: 420px !important;
+    height: 420px !important;
+    margin: 1.5% !important;
+    overflow: hidden !important;
+  }
+}
+
+.item {
+  border-radius: 2px;
+}
+
+  .item.selected-item:first-child .user {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+    .item.selected-item:first-child .user.selected {
+      margin-top: 0;
+    }
+
+  .item.selected-item:last-child .user {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
+  .item .tile .folded {
+    cursor: pointer;
+  }
+
+    .item .tile .folded:focus {
+      outline: 0;
+    }
+
+  .item .user {
+    background-color: #fff;
+    transition: all 500ms;
+    padding: 15px;
+  }
+
+    .item .user h3, .item .user p {
+      transition: all 500ms;
+      margin: 0px;
+    }
+
+    .item .user h3 {
+      font-size: 2em;
+      font-weight: 100;
+    }
+
+    .item .user p {
+      opacity: 1;
+      height: inherit;
+    }
+
+      .item .user p.ng-hide {
+        opacity: 0;
+        height: 0;
+      }
+
+    .item .user.selected {
+      margin: 30px -15px;
+      border-radius: 2px;
+    }
+
+      .item .user.selected .expanded {
+        visibility: visible;
+        max-height: 700px;
+        opacity: 1;
+      }
+
+        .item .user.selected .expanded * {
+          max-height: 700px;
+          opacity: 1;
+        }
+
+        .item .user.selected .expanded .md-label {
+          border: hidden;
+        }
+
+      .item .user.selected h3 {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+      }
+
+    .item .user .expanded {
+      visibility: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: all 500ms;
+    }
+
+      .item .user .expanded > * {
+        max-height: 0;
+        opacity: 0;
+        transition: all 500ms;
+      }
+
+      .item .user .expanded .split {
+        padding: 10px;
+      }
+
+    .item .user .face {
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      width: 48px;
+      height: 48px;
+      margin: 16px;
+    }
+
+.main-header-logo {
+  padding: 10px;
+}
+
+  .main-header-logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+.details-list {
+  height: 600px;
+}

@@ -1,0 +1,19 @@
+﻿{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es5",
+    "module": "amd",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "../node_modules",
+    "../e2e",
+    "./typings/main.d.ts",
+    "./typings/main/**"
+  ]
+}

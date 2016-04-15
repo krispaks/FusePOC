@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="overflow-y: hidden !important;">
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,200,400,100,700' rel='stylesheet' type='text/css'>
+	<link href="assets/css/material-icons.css" rel="stylesheet" />
+	<link href="assets/css/angular-material.css" rel="stylesheet" />
+	<link href="assets/css/ui-grid.css" rel="stylesheet" />
+	<link href="assets/css/main.css" rel="stylesheet" />
+	<script src="./lib/system.js"></script>
+
+	<script>
+            System.config({
+                defaultJSExtensions: true,
+                baseUrl: '/app',
+                map: {
+                    'angular': '/lib/angular',
+                    'angular-route': '/lib/angular-route',
+                    'angular-animate': '/lib/angular-animate',
+                    'angular-aria': '/lib/angular-aria',
+                    'angular-material': '/lib/angular-material',
+                    'angular-resource': '/lib/angular-resource',
+                    'ui-grid': '/lib/ui-grid',
+                    'ui-grid-fonts': '/lib/ui-grid-vfs-fonts',
+					'ui-grid-pdf': '/lib/ui-grid-pdf'
+                }
+            });
+            System.import('app/poc/poc.module').catch(console.log.bind(console));
+	</script>
+	<script src="./lib/ui-grid-csv.js"></script>
+</head>
+<body ng-app="PocModule" ng-cloak>
+	<div ng-controller="PocModuleCtrl as vm" layout="column">
+		<poc-component></poc-component>
+	</div>
+</body>
+</html>
