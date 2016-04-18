@@ -9,7 +9,8 @@ import { PocConfig } from './poc.config';
 import { PocComponent } from './poc.component';
 import { AutoModule } from '../auto/auto.module';
 import { SpulModule } from '../spul/spul.module';
-import { SharedComponent } from '../shared/shared.component'
+import { SharedComponent } from '../shared/shared.component';
+import { GenericDirective } from '../generic/generic.directive';
 
 new AutoModule();
 new SpulModule();
@@ -19,6 +20,7 @@ angular.module('PocModule', ['ngRoute'
 	, 'AutoModule'
 	, 'SpulModule'])
 	.controller('PocModuleCtrl', PocModuleCtrl)
+	.directive('genericDirective', GenericDirective.factory())
 	.component('pocComponent', new PocComponent())
 	.component('sharedComp', new SharedComponent())
 	.config(PocConfig);

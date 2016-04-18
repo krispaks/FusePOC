@@ -3,3 +3,15 @@
 	<option ng-repeat="group in $ctrl.groups" value="{{group}}">{{group}}</option>
 </select>
 <ng-view></ng-view>
+<br />
+<br />
+<generic-directive metadata="$ctrl.metadata[0]" data="$ctrl.data[0].dateofbirth"></generic-directive>
+<generic-directive metadata="$ctrl.metadata[1]" data="$ctrl.data[0].name"></generic-directive>
+<br />
+<br />
+<generic-directive metadata="$ctrl.metadata[0]" data="$ctrl.data[1].dateofbirth"></generic-directive>
+<generic-directive metadata="$ctrl.metadata[1]" data="$ctrl.data[1].name"></generic-directive>
+<br />
+<br />
+<generic-directive metadata="$ctrl.metadata[0]" data="$ctrl.data[2].dateofbirth"></generic-directive>
+<generic-directive metadata="$ctrl.metadata[1]" data="$ctrl.data[2].name"></generic-directive>

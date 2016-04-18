@@ -51,10 +51,13 @@ bin/*
 .vs/*
 FusePOC.Common/obj/*
 FusePOC.Common/bin/*
+FusePOC.Common/*.user
 FusePOC.Server/obj/*
 FusePOC.Server/bin/*
+FusePOC.Server/*.user
 FusePOC.WebApi/obj/*
 FusePOC.WebApi/bin/*
 FusePOC.WebApi/*.user
 FusePOC/obj/*
 FusePOC/bin/*
+FusePOC/*.user

@@ -1,24 +1,31 @@
 define(["require", "exports"], function (require, exports) {
     var GenericCtlr = (function () {
         function GenericCtlr() {
-            this.metaData = {};
-            this.templateSelector = function (type) {
-                switch (type) {
-                    case 'text':
-                        return '<input type="text">';
-                    case 'date':
-                        return '<input type="date">';
-                }
+            this.metaData = {
+                prop: 'name',
+                required: true,
+                validate: true,
+                type: 'text'
+            };
+            this.$onInit = function () {
+            };
+            this.$postLink = function () {
+                var ctrl = this;
+                alert('test');
             };
             var ctrl = this;
-            //ctrl.template = templateSelector(component.metaData.type);
         }
         return GenericCtlr;
     })();
     var GenericComponent = (function () {
         function GenericComponent() {
             this.controller = {};
-            this.bindings = {
+            this.bindings = {};
+            var component = this;
+            component.template = '<div>Test</div>';
+            component.controller = GenericCtlr;
+            component.transclude = true;
+            component.bindings = {
                 metaData: '<'
             };
         }

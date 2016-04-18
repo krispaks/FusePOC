@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\generic\generic.component.js" />
+    <Content Include="app\generic\generic.directive.js" />
+    <Content Include="app\generic\generic.template.html" />
     <Content Include="packages.config" />
     <Content Include="assets\fonts\MaterialIcons-Regular.eot" />
     <Content Include="assets\fonts\MaterialIcons-Regular.ijmap" />
@@ -144,6 +146,7 @@
     <TypeScriptCompile Include="app\auto\auto.service.ts" />
     <TypeScriptCompile Include="app\auto\segmentation\auto.segmentation.component.ts" />
     <TypeScriptCompile Include="app\generic\generic.component.ts" />
+    <TypeScriptCompile Include="app\generic\generic.directive.ts" />
     <TypeScriptCompile Include="app\poc\poc.component.ts" />
     <TypeScriptCompile Include="app\poc\poc.config.ts" />
     <TypeScriptCompile Include="app\poc\poc.controller.ts" />

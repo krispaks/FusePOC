@@ -6,6 +6,27 @@ define(["require", "exports"], function (require, exports) {
             this.$location = $location;
             this.$resource = $resource;
             this.segmentationId = '1';
+            this.metadata = [{
+                    required: true,
+                    type: 'date',
+                    validate: true,
+                    prop: 'dateofbirth'
+                },
+                {
+                    required: true,
+                    type: 'text',
+                    validate: true,
+                    prop: 'name'
+                }];
+            this.data = [{
+                    dateofbirth: '2010-01-01', name: 'khris'
+                },
+                {
+                    dateofbirth: '2011-01-01', name: 'sky'
+                },
+                {
+                    dateofbirth: '2012-01-01', name: 'rassel'
+                }];
             var ctrl = this;
             ctrl.GetUserRoutes().then(function (data) {
                 ctrl.groups = data;

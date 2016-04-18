@@ -4,6 +4,28 @@ class PocComponentCtrl {
 	location: string;
 	groups: Array<string>;
 	segmentationId: string = '1';
+	metadata: any = [{
+		required: true,
+		type: 'date',
+		validate: true,
+		prop: 'dateofbirth'
+	}
+	,{
+		required: true,
+		type: 'text',
+		validate: true,
+		prop: 'name'
+	}];
+
+	data: any = [{
+			dateofbirth: '2010-01-01', name: 'khris'
+		}
+		,{
+			dateofbirth: '2011-01-01', name: 'sky'
+		}
+		,{
+			dateofbirth: '2012-01-01', name: 'rassel'
+		}];
 	static $inject = ['$location', '$resource'];
 
 	//// NOTE:KPACA - probably wanna create a service and inject here.
