@@ -19,13 +19,13 @@ define(["require", "exports"], function (require, exports) {
                     prop: 'name'
                 }];
             this.data = [{
-                    dateofbirth: '2010-01-01', name: 'khris'
+                    dateofbirth: '2010-01-01', name: 'roger federer'
                 },
                 {
-                    dateofbirth: '2011-01-01', name: 'sky'
+                    dateofbirth: '2011-01-01', name: 'novak djokovic'
                 },
                 {
-                    dateofbirth: '2012-01-01', name: 'rassel'
+                    dateofbirth: '2012-01-01', name: 'rafael nadal'
                 }];
             var ctrl = this;
             ctrl.GetUserRoutes().then(function (data) {

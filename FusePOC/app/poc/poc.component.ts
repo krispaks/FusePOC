@@ -18,13 +18,13 @@ class PocComponentCtrl {
 	}];
 
 	data: any = [{
-			dateofbirth: '2010-01-01', name: 'khris'
+			dateofbirth: '2010-01-01', name: 'roger federer'
 		}
 		,{
-			dateofbirth: '2011-01-01', name: 'sky'
+			dateofbirth: '2011-01-01', name: 'novak djokovic'
 		}
 		,{
-			dateofbirth: '2012-01-01', name: 'rassel'
+			dateofbirth: '2012-01-01', name: 'rafael nadal'
 		}];
 	static $inject = ['$location', '$resource'];
 

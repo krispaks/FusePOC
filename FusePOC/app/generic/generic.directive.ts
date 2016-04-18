@@ -1,8 +1,8 @@
 ﻿export class GenericDirective implements ng.IDirective
 {
 	restrict = 'E';
-	template = '<div></div>';
-	replate = true;
+	template = '';
+	replace = true;
 	scope = {
 		metadata: '=',
 		data: '='

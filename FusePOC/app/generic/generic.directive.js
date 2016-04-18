@@ -2,8 +2,8 @@ define(["require", "exports"], function (require, exports) {
     var GenericDirective = (function () {
         function GenericDirective() {
             this.restrict = 'E';
-            this.template = '<div></div>';
-            this.replate = true;
+            this.template = '';
+            this.replace = true;
             this.scope = {
                 metadata: '=',
                 data: '='
