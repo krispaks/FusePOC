@@ -47,3 +47,14 @@ Temporary Items
 .apdisk
 
 packages/*
+bin/*
+.vs/*
+FusePOC.Common/obj/*
+FusePOC.Common/bin/*
+FusePOC.Server/obj/*
+FusePOC.Server/bin/*
+FusePOC.WebApi/obj/*
+FusePOC.WebApi/bin/*
+FusePOC.WebApi/*.user
+FusePOC/obj/*
+FusePOC/bin/*
