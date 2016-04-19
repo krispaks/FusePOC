@@ -18,15 +18,10 @@ define(["require", "exports"], function (require, exports) {
                     validate: true,
                     prop: 'name'
                 }];
-            this.data = [{
-                    dateofbirth: '2010-01-01', name: 'roger federer'
-                },
-                {
-                    dateofbirth: '2011-01-01', name: 'novak djokovic'
-                },
-                {
-                    dateofbirth: '2012-01-01', name: 'rafael nadal'
-                }];
+            this.data = {
+                dateofbirth: '2010-01-01',
+                name: 'roger federer',
+            };
             var ctrl = this;
             ctrl.GetUserRoutes().then(function (data) {
                 ctrl.groups = data;

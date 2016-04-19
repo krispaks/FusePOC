@@ -17,15 +17,11 @@ class PocComponentCtrl {
 		prop: 'name'
 	}];
 
-	data: any = [{
-			dateofbirth: '2010-01-01', name: 'roger federer'
-		}
-		,{
-			dateofbirth: '2011-01-01', name: 'novak djokovic'
-		}
-		,{
-			dateofbirth: '2012-01-01', name: 'rafael nadal'
-		}];
+	data: any = {
+		dateofbirth: '2010-01-01',
+		name: 'roger federer',
+	};
+
 	static $inject = ['$location', '$resource'];
 
 	//// NOTE:KPACA - probably wanna create a service and inject here.
