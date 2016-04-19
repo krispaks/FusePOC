@@ -5,19 +5,23 @@
 	replace = true;
 	scope = {
 		metadata: '=',
-		data: '='
+		data: '=',
+		prop: '@'
 	};
 
 	constructor() {
 	}
 
 	link = (scope: any, element: ng.IAugmentedJQuery, attrs: ng.IAttributes, ctrl: any) => {
-		switch (scope.metadata.type) {
+
+		let metadata = scope.metadata.find((metadata) => metadata.prop === scope.prop);
+		let data = metadata ? scope.data[metadata.prop] : '';
+		switch (metadata.type) {
 			case 'text':
-				element.append('<input type="text" value="' + scope.data + '">');
+				element.append('<input type="text" value="' + data + '">');
 				break;
 			case 'date':
-				element.append('<input type="date" value="' + scope.data + '">');
+				element.append('<input type="date" value="' + data + '">');
 				break;
 		}
 		
