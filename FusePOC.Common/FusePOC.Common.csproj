@@ -70,14 +70,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auto\AutoSegmentation.cs" />
     <Compile Include="Interfaces\IFuseFacade.cs" />
     <Compile Include="Interfaces\IFuseUser.cs" />
     <Compile Include="Interfaces\ISegmentationData.cs" />
     <Compile Include="Interfaces\ISharedData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shared\SharedData.cs" />
-    <Compile Include="Spul\SpulSegmentation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
