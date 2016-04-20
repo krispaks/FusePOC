@@ -1,23 +1,31 @@
-﻿export class GenericDirective implements ng.IDirective
+﻿export class GenericDirectiveCtrl {
+	
+}
+
+export class GenericDirective implements ng.IDirective
 {
-	restrict = 'E';
-	template = '';
-	replace = true;
-	scope = {
+	bindToController: any = {
 		metadata: '=',
 		data: '=',
 		prop: '@'
 	};
+	restrict: string = 'E';
+	template: string = '';
+	replace: boolean = true;
+	controller = function () {};
+	controllerAs: string = 'ctrl';
+	require = ['genericDirective'];
+	scope: any = {};
 
 	constructor() {
 	}
 
 	link = (scope: any, element: ng.IAugmentedJQuery, attrs: ng.IAttributes, ctrl: any) => {
-		scope.$watch('metadata', () => {
+		scope.$watch('ctrl.metadata', () => {
 			element.empty();
-			let metadata = scope.metadata.find((metadata) => metadata.prop === scope.prop);
+			let metadata = ctrl[0].metadata.find((metadata) => metadata.prop === ctrl[0].prop);
 			if (metadata) {
-				let data = metadata ? scope.data[metadata.prop] : '';
+				let data = metadata ? ctrl[0].data[metadata.prop] : '';
 				switch (metadata.type) {
 					case 'text':
 						element.append('<input type="text" value="' + data + '">');
