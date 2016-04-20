@@ -13,10 +13,11 @@ define(["require", "exports", './auto.model', '../shared/shared.model'], functio
             ctrl.autoService.GetSegmentationData(1)
                 .then(function (data) {
                 var segData = new auto_model_1.AutoSegmentationData();
-                segData.autoData1 = data.autoSegmentationData1;
-                segData.autoData2 = data.autoSegmentationData2;
-                segData.segmentationData1 = data.segmentationSpecificData1;
-                segData.segmentationData2 = data.segmentationSpecificData2;
+                segData.autoData1 = data.data.autoSegmentationData1;
+                segData.autoData2 = data.data.autoSegmentationData2;
+                segData.autoData3 = data.data.autoSegmentationData3;
+                segData.segmentationData1 = data.data.segmentationSpecificData1;
+                segData.segmentationData2 = data.data.segmentationSpecificData2;
                 ctrl.segmentationData = segData;
             });
         };

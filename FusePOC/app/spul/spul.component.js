@@ -13,10 +13,10 @@ define(["require", "exports", './spul.model', '../shared/shared.model'], functio
             ctrl.spulService.GetSegmentationData(1)
                 .then(function (data) {
                 var segData = new spul_model_1.SpulSegmentationData();
-                segData.spulData1 = data.spulSegmentationData1;
-                segData.spulData2 = data.spulSegmentationDate1;
-                segData.segmentationData1 = data.segmentationSpecificData1;
-                segData.segmentationData2 = data.segmentationSpecificData2;
+                segData.spulData1 = data.data.spulSegmentationData1;
+                segData.spulData2 = data.data.spulSegmentationDate1;
+                segData.segmentationData1 = data.data.segmentationSpecificData1;
+                segData.segmentationData2 = data.data.segmentationSpecificData2;
                 ctrl.segmentationData = segData;
             });
         };

@@ -22,10 +22,10 @@ class SpulComponentCtrl {
 		ctrl.spulService.GetSegmentationData(1)
 			.then(function (data: any) {
 				let segData = new SpulSegmentationData();
-				segData.spulData1 = data.spulSegmentationData1;
-				segData.spulData2 = data.spulSegmentationDate1;
-				segData.segmentationData1 = data.segmentationSpecificData1;
-				segData.segmentationData2 = data.segmentationSpecificData2;
+				segData.spulData1 = data.data.spulSegmentationData1;
+				segData.spulData2 = data.data.spulSegmentationDate1;
+				segData.segmentationData1 = data.data.segmentationSpecificData1;
+				segData.segmentationData2 = data.data.segmentationSpecificData2;
 				ctrl.segmentationData = segData;
 			});
 	}

@@ -11,6 +11,7 @@ import { AutoModule } from '../auto/auto.module';
 import { SpulModule } from '../spul/spul.module';
 import { SharedComponent } from '../shared/shared.component';
 import { GenericDirective } from '../generic/generic.directive';
+import { POCService } from './poc.service';
 
 new AutoModule();
 new SpulModule();
@@ -23,4 +24,5 @@ angular.module('PocModule', ['ngRoute'
 	.directive('genericDirective', GenericDirective.factory())
 	.component('pocComponent', new PocComponent())
 	.component('sharedComp', new SharedComponent())
+	.factory('pocService', ($resource) => new POCService($resource))
 	.config(PocConfig);

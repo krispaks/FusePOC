@@ -65,6 +65,7 @@
     <Content Include="app\generic\generic.component.js" />
     <Content Include="app\generic\generic.directive.js" />
     <Content Include="app\generic\generic.template.html" />
+    <Content Include="app\poc\poc.service.js" />
     <Content Include="packages.config" />
     <Content Include="assets\fonts\MaterialIcons-Regular.eot" />
     <Content Include="assets\fonts\MaterialIcons-Regular.ijmap" />
@@ -151,6 +152,7 @@
     <TypeScriptCompile Include="app\poc\poc.config.ts" />
     <TypeScriptCompile Include="app\poc\poc.controller.ts" />
     <TypeScriptCompile Include="app\poc\poc.module.ts" />
+    <TypeScriptCompile Include="app\poc\poc.service.ts" />
     <TypeScriptCompile Include="app\shared\shared.component.ts" />
     <TypeScriptCompile Include="app\shared\shared.model.ts" />
     <TypeScriptCompile Include="app\shared\shared.service.ts" />

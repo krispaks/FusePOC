@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IFuseData.cs" />
     <Compile Include="Interfaces\IFuseFacade.cs" />
     <Compile Include="Interfaces\IFuseUser.cs" />
     <Compile Include="Interfaces\ISegmentationData.cs" />

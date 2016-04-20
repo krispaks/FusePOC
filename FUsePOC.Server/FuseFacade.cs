@@ -27,24 +27,33 @@ namespace FusePOC.Server
 			this.securityFacade = new SecurityFacade();
 		}
 
-		public ISegmentationData GetSegmentationData(int id, string type)
+		public IFuseData GetSegmentationData(int id, string type)
 		{	
 			if(type == "spul") {
-				return new SpulSegmentation
+				return new SegmentationData
 				{
-					SegmentationSpecificData2 = 1000,
-					SegmentationSpecificData1 = "This is SPUL Context",
-					SpulSegmentationData1 = "Spul SegmentationData1",
-					SpulSegmentationDate1 = DateTime.Now
+					data = new SpulSegmentation
+					{
+						SegmentationSpecificData2 = 1000,
+						SegmentationSpecificData1 = "This is SPUL Context",
+						SpulSegmentationData1 = "Spul SegmentationData1",
+						SpulSegmentationDate1 = DateTime.Now.ToString("yyyy-MM-dd")
+					},
+					metadata = "[{\"type\": \"text\", \"prop\": \"segmentationSpecificData1\"}, {\"type\": \"text\", \"prop\": \"segmentationSpecificData2\"}, {\"type\": \"text\", \"prop\": \"spulSegmentationData1\"}, {\"type\": \"date\", \"prop\": \"spulSegmentationDate1\"}]"
 				};
 			}
 			else {
-				return new AutoSegmentation
+				return new SegmentationData
 				{
-					SegmentationSpecificData2 = 6000,
-					SegmentationSpecificData1 = "This is Auto Context",
-					AutoSegmentationData1 = "Auto SegmentationData1",
-					AutoSegmentationData2 = 5000
+					data = new AutoSegmentation
+					{
+						SegmentationSpecificData2 = 6000,
+						SegmentationSpecificData1 = "This is Auto Context",
+						AutoSegmentationData1 = "Auto SegmentationData1",
+						AutoSegmentationData2 = 5000,
+						AutoSegmentationData3 = 2000
+					},
+					metadata = "[{\"type\": \"text\", \"prop\": \"segmentationSpecificData1\"}, {\"type\": \"text\", \"prop\": \"segmentationSpecificData2\"}, {\"type\": \"text\", \"prop\": \"autoSegmentationData1\"}, {\"type\": \"text\", \"prop\": \"autoSegmentationData2\"}, {\"type\": \"text\", \"prop\": \"autoSegmentationData3\"}]"
 				};
 			}
 		}

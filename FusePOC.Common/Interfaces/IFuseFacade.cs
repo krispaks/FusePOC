@@ -7,7 +7,7 @@ namespace FusePOC.Common.Interfaces
 	public interface IFuseFacade
 	{
 		List<string> GetUserRoutes(string userIdentityName);
-		ISegmentationData GetSegmentationData(int id, string type);
+		IFuseData GetSegmentationData(int id, string type);
 		ISharedData GetSharedData();
 	}
 }

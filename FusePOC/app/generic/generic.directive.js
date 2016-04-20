@@ -10,16 +10,21 @@ define(["require", "exports"], function (require, exports) {
                 prop: '@'
             };
             this.link = function (scope, element, attrs, ctrl) {
-                var metadata = scope.metadata.find(function (metadata) { return metadata.prop === scope.prop; });
-                var data = metadata ? scope.data[metadata.prop] : '';
-                switch (metadata.type) {
-                    case 'text':
-                        element.append('<input type="text" value="' + data + '">');
-                        break;
-                    case 'date':
-                        element.append('<input type="date" value="' + data + '">');
-                        break;
-                }
+                scope.$watch('metadata', function () {
+                    element.empty();
+                    var metadata = scope.metadata.find(function (metadata) { return metadata.prop === scope.prop; });
+                    if (metadata) {
+                        var data = metadata ? scope.data[metadata.prop] : '';
+                        switch (metadata.type) {
+                            case 'text':
+                                element.append('<input type="text" value="' + data + '">');
+                                break;
+                            case 'date':
+                                element.append('<input type="date" value="' + data + '">');
+                                break;
+                        }
+                    }
+                });
             };
         }
         GenericDirective.factory = function () {

@@ -14,6 +14,6 @@ namespace FUsePOC.Server.Models
 		public string SegmentationSpecificData1 { get; set; }
 
 		public string SpulSegmentationData1 { get; set; }
-		public DateTime SpulSegmentationDate1 { get; set; }
+		public string SpulSegmentationDate1 { get; set; }
 	}
 }

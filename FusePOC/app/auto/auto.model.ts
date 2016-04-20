@@ -3,4 +3,5 @@
 	segmentationData2: number;
 	autoData1: string;
 	autoData2: number;
+	autoData3: number;
 }

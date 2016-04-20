@@ -1,32 +1,20 @@
 ﻿'use strict';
+import { IPOCService } from './poc.service';
 
 class PocComponentCtrl {
 	location: string;
 	groups: Array<string>;
 	segmentationId: string = '1';
-	metadata: any = [{
-		required: true,
-		type: 'date',
-		validate: true,
-		prop: 'dateofbirth'
-	}
-	,{
-		required: true,
-		type: 'text',
-		validate: true,
-		prop: 'name'
-	}];
+	metadata: any = [];
+	data: any = {};
 
-	data: any = {
-		dateofbirth: '2010-01-01',
-		name: 'roger federer',
-	};
-
-	static $inject = ['$location', '$resource'];
+	static $inject = ['$location', '$resource', 'pocService'];
 
 	//// NOTE:KPACA - probably wanna create a service and inject here.
 
-	constructor(private $location: ng.ILocationService, private $resource: ng.resource.IResourceService) {
+	constructor(private $location: ng.ILocationService
+		, private $resource: ng.resource.IResourceService
+		, private pocService: IPOCService) {
 		let ctrl = this;
 		ctrl.GetUserRoutes().then(function (data: any) {
 			ctrl.groups = data;
@@ -36,6 +24,12 @@ class PocComponentCtrl {
 	onLocationChange() {
 		let ctrl = this;
 		ctrl.$location.path("/" + ctrl.location);
+
+		ctrl.pocService.GetSegmentationData(ctrl.location.toLocaleLowerCase())
+			.then((data: any) => {			
+				ctrl.metadata = JSON.parse(data.metadata);
+				ctrl.data = data.data;
+			})
 	}
 
 	private GetUserRoutes(): ng.IPromise<ng.resource.IResourceArray<ng.resource.IResource<any>>>

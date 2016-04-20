@@ -2,26 +2,13 @@ define(["require", "exports"], function (require, exports) {
     'use strict';
     var PocComponentCtrl = (function () {
         //// NOTE:KPACA - probably wanna create a service and inject here.
-        function PocComponentCtrl($location, $resource) {
+        function PocComponentCtrl($location, $resource, pocService) {
             this.$location = $location;
             this.$resource = $resource;
+            this.pocService = pocService;
             this.segmentationId = '1';
-            this.metadata = [{
-                    required: true,
-                    type: 'date',
-                    validate: true,
-                    prop: 'dateofbirth'
-                },
-                {
-                    required: true,
-                    type: 'text',
-                    validate: true,
-                    prop: 'name'
-                }];
-            this.data = {
-                dateofbirth: '2010-01-01',
-                name: 'roger federer',
-            };
+            this.metadata = [];
+            this.data = {};
             var ctrl = this;
             ctrl.GetUserRoutes().then(function (data) {
                 ctrl.groups = data;
@@ -30,6 +17,11 @@ define(["require", "exports"], function (require, exports) {
         PocComponentCtrl.prototype.onLocationChange = function () {
             var ctrl = this;
             ctrl.$location.path("/" + ctrl.location);
+            ctrl.pocService.GetSegmentationData(ctrl.location.toLocaleLowerCase())
+                .then(function (data) {
+                ctrl.metadata = JSON.parse(data.metadata);
+                ctrl.data = data.data;
+            });
         };
         PocComponentCtrl.prototype.GetUserRoutes = function () {
             var ctrl = this;
@@ -42,7 +34,7 @@ define(["require", "exports"], function (require, exports) {
             var res = req.query().$promise;
             return res;
         };
-        PocComponentCtrl.$inject = ['$location', '$resource'];
+        PocComponentCtrl.$inject = ['$location', '$resource', 'pocService'];
         return PocComponentCtrl;
     })();
     var PocComponent = (function () {

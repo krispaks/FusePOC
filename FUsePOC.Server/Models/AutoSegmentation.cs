@@ -15,5 +15,7 @@ namespace FUsePOC.Server.Models
 
 		public string AutoSegmentationData1 { get; set; }
 		public int AutoSegmentationData2 { get; set; }
+
+		public int AutoSegmentationData3 { get; set; }
 	}
 }

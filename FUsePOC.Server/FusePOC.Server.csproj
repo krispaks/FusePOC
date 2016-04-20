@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="FuseFacade.cs" />
     <Compile Include="Models\AutoSegmentation.cs" />
+    <Compile Include="Models\SegmentationData.cs" />
     <Compile Include="Models\SharedData.cs" />
     <Compile Include="Models\SpulSegmentation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -27,7 +27,7 @@ namespace FusePOC.WebApi.Controllers
 		// GET api/<controller>/5
 		public IHttpActionResult Get(int id, string type)
 		{
-			ISegmentationData data = fuseFacade.GetSegmentationData(id, type);
+			IFuseData data = fuseFacade.GetSegmentationData(id, type);
 
 			return Ok(data);
 		}
