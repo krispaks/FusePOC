@@ -15,7 +15,8 @@ define(["require", "exports"], function (require, exports) {
             this.restrict = 'E';
             this.template = '';
             this.replace = true;
-            this.controller = function () { };
+            this.controller = function ($scope) {
+            };
             this.controllerAs = 'ctrl';
             this.require = ['genericDirective'];
             this.scope = {};

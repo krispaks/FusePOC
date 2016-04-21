@@ -2,11 +2,21 @@
 <select ng-model="$ctrl.location" ng-change="$ctrl.onLocationChange()">
 	<option ng-repeat="group in $ctrl.groups" value="{{group}}">{{group}}</option>
 </select>
+
+<br />
+------------------------------------------------------
+<br />
+<div style="font-weight:bolder">
+	This sample uses routing and business unit specific templates
+</div>
 <ng-view></ng-view>
+
+<br />
+------------------------------------------------------
 <br />
 <br />
 
-<div style="font-weight:bolder">Generic Directive Sample</div>
+<div style="font-weight:bolder">Generic Directive Sample - This uses a generic angular directive that will use metadata to render an input dynamically</div>
 <div>
 	<generic-directive metadata="$ctrl.metadata" prop="segmentationSpecificData1" data="$ctrl.data"></generic-directive>
 </div>

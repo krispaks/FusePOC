@@ -12,7 +12,8 @@ export class GenericDirective implements ng.IDirective
 	restrict: string = 'E';
 	template: string = '';
 	replace: boolean = true;
-	controller = function () {};
+	controller: Function = function ($scope: ng.IScope) {
+	};
 	controllerAs: string = 'ctrl';
 	require = ['genericDirective'];
 	scope: any = {};
