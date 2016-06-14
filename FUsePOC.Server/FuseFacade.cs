@@ -1,11 +1,3 @@
-﻿
-using Drive.Framework;
-using Drive.Framework.Collections.Generic;
-using Drive.Framework.Core;
-using Drive.Framework.Data;
-using Drive.Framework.Logging;
-using Drive.Framework.Security;
-using Drive.Framework.Transaction;
 using FusePOC.Common.Interfaces;
 using FUsePOC.Server.Models;
 using System;
@@ -15,7 +7,7 @@ using System.Threading;
 
 namespace FusePOC.Server
 {
-	public class FuseFacade : BaseFacade, IFuseFacade
+	public class FuseFacade
 	{
 	
 		private SecurityFacade securityFacade = null;
